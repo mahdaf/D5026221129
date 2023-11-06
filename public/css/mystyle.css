@@ -1,0 +1,33 @@
+h2 {
+    color: white;
+    text-align: center;
+}
+p{
+    color: bisque;
+    text-align: justify;
+}
+body{
+    background: rgb(162, 213, 213);
+}
+.ratakanan{
+    text-align: center;
+    color: tomato;
+    font-weight: bold;
+}
+.ratakiri{
+    text-align:left;
+    color: tomato;
+    font-weight: bold;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color: blueviolet;
+}
+.bundar{
+    border-radius:50%;
+}

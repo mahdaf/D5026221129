@@ -1,0 +1,115 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(260deg, #7D0114, #BE1301, #B11005, #AA0D07, #7D0114);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Poppins:ital@1&display=swap');
+
+.adf_container{
+    margin: 0px auto;
+    height: 100%;
+    width: 100%;
+    max-width: 680px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 64px 16px 32px;
+}
+.adf_profile{
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.logo {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: block;
+    object-fit: contain;
+    object-position: initial;
+    filter: none;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+ h1 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+}
+.deskripsi{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.adf_list {
+    margin-top: 30px;
+    position: relative;
+
+}
+p{
+    line-height: 1.5;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.list {
+    z-index: 0;
+    overflow: hidden;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 30px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    padding-left: 44px;
+    padding-right: 44px;
+    text-align: center;
+}
+
+a.tautan {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+a.tautan:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+.list:hover {
+    hyphens: auto;
+    white-space: normal;
+    background-color: white;
+}
+
+footer{
+    padding: 30px 0px 30px 0px;
+    margin: 0px;
+    align-items: center;
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+    position: absolute;
+    justify-items: center;
+    border-radius: 80%;
+}

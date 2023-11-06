@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('pertemuan1', function () {
 	return view('pt1');
 });
@@ -42,3 +41,7 @@ Route::get('pertemuan6', function () {
 Route::get('landing', function () {
 	return view('ets');
 });
+
+Route::get('dosen', 'App\Http\Controllers\DosenController@index');
+
+Route::get('show', 'App\Http\Controllers\DosenController@showBlog');

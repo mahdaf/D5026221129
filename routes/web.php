@@ -42,6 +42,17 @@ Route::get('landing', function () {
 	return view('ets');
 });
 
-Route::get('dosen', 'App\Http\Controllers\DosenController@index');
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
 
 Route::get('show', 'App\Http\Controllers\DosenController@showBlog');
+
+Route::get('/pegawai/{name}', 'App\Http\Controllers\DosenController@showName');
+
+Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
+
+Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+
+// route blog
+Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
+Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');

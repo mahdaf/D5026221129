@@ -17,7 +17,21 @@ class DosenController extends Controller
         $nama = "Budi";
         $alamat = "Surabaya";
         $umur = 19;
-        return view('blog',['nama' => $nama, 'alamat' => $alamat, 'umur' => $umur]);
+        return view('blog2',['nama' => $nama, 'alamat' => $alamat, 'umur' => $umur]);
+    }
+
+    public function showName($name){
+        return 'Anda telah mengisikan : ' . $name;
+    }
+
+    public function formulir(){
+        return view('formulir');
+    }
+
+    public function proses(Request $request){
+        $nama = $request->input('nama');
+     	$alamat = $request->input('alamat');
+        return "Nama : ".$nama.", Alamat : ".$alamat;
     }
 
 }

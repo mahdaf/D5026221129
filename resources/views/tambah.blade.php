@@ -1,16 +1,14 @@
 <!-- Menghubungkan dengan view template master -->
-@extends('master')
+@extends('master2')
 
 <!-- isi bagian judul halaman -->
 <!-- cara penulisan isi section yang pendek -->
-@section('judul_halaman', 'Data Pegawai')
+@section('judul_halaman', 'Tambah Pegawai')
 
 
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
 @section('konten')
-
-
 <a href="/pegawai"> Kembali</a>
 
 <br/>
@@ -24,5 +22,6 @@
     Alamat <textarea name="alamat" required="required"></textarea> <br/>
     <input type="submit" value="Simpan Data">
 </form>
+
 
 @endsection

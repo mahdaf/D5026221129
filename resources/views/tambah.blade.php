@@ -12,16 +12,48 @@
 <a href="/pegawai"> Kembali</a>
 
 <br/>
-<br/>
 
-<form action="/pegawai/store" method="post">
+{{-- <form action="/pegawai/store" method="post">
     {{ csrf_field() }}
     Nama <input type="text" name="nama" required="required"> <br/>
     Jabatan <input type="text" name="jabatan" required="required"> <br/>
     Umur <input type="number" name="umur" required="required"> <br/>
     Alamat <textarea name="alamat" required="required"></textarea> <br/>
     <input type="submit" value="Simpan Data">
-</form>
+</form> --}}
 
+<form class = "form-horizontal" role = "form" action="/pegawai/store" method="post">
+    {{ csrf_field() }}
+    <div class = "form-group">
+       <label for = "nama" class = "col-sm-2 control-label">Nama</label>
+       <div class = "col-sm-10">
+          <input type = "text" class = "form-control" name="nama" required="required" placeholder = "Masukkan Nama">
+       </div>
+    </div>
+    <div class = "form-group">
+        <label for = "jabatan" class = "col-sm-2 control-label">Jabatan</label>
+        <div class = "col-sm-10">
+           <input type = "text" class = "form-control" name="jabatan" required="required" placeholder = "Masukkan Jabatan">
+        </div>
+     </div>
+     <div class = "form-group">
+        <label for = "umur" class = "col-sm-2 control-label">Umur</label>
+        <div class = "col-sm-10">
+           <input type = "number" class = "form-control" name="umur" required="required" placeholder = "Masukkan Umur">
+        </div>
+     </div>
+     <div class = "form-group">
+        <label for = "jabatan" class = "col-sm-2 control-label">Alamat</label>
+        <div class = "col-sm-10">
+           <textarea name="alamat" required="required" class = "form-control" placeholder = "Masukkan Alamat"></textarea>
+        </div>
+     </div>
+
+     <div class = "form-group">
+        <div class = "col-sm-offset-2 col-sm-10">
+           <input type="submit" class = "btn btn-primary" value="Simpan Data">
+        </div>
+     </div>
+</form>
 
 @endsection

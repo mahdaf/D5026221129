@@ -71,3 +71,10 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/nilai','App\Http\Controllers\NilaiController@index');
 Route::get('/nilai/tambahnilai','App\Http\Controllers\NilaiController@tambahNilai');
 Route::post('/nilai/store','App\Http\Controllers\NilaiController@store');
+
+//route CRUD Kopi
+Route::get('/kopi','App\Http\Controllers\KopiController@index');
+Route::post('/kopi/update','App\Http\Controllers\KopiController@update');
+Route::get('/kopi/edit/{id}','App\Http\Controllers\KopiController@edit');
+Route::get('/kopi/hapus/{id}','App\Http\Controllers\KopiController@hapus');
+Route::get('/kopi/view/{id}','App\Http\Controllers\KopiController@view');

@@ -1,5 +1,5 @@
     <!-- Menghubungkan dengan view template master -->
-    @extends('master')
+    @extends('master2')
 
     <!-- isi bagian judul halaman -->
     <!-- cara penulisan isi section yang pendek -->
@@ -12,7 +12,7 @@
     <h3 class="text-center">View</h3>
     <div class="container align-center">
         <div class="row bg-light d-flex align-items-center justify-content-center">
-            <div class="col-3 d-flex justify-content-center bg-secondary">
+            <div class="col-3 d-flex bg-secondary">
 
             </div>
             <div class="col-4 d-flex flex-column m-2">

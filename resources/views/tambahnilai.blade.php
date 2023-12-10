@@ -5,7 +5,6 @@
 <!-- cara penulisan isi section yang pendek -->
 @section('judul_halaman', 'Tambah Nilai')
 
-
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
 @section('konten')

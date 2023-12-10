@@ -26,33 +26,33 @@
 
 <form class="form-horizontal" role="form" action="/pegawai/update" method="post">
     {{ csrf_field() }}
-    <div class ="form-group">
-       <label for= "id" class = "col-sm-2 control-label"></label>
-       <div class= "col-sm-10">
+    <div class ="form-group row">
+       <label for= "id" class = "col-sm-1 control-label"></label>
+       <div class= "col-sm-9">
           <input type="hidden" class="form-control" name="id" value="{{ $p->pegawai_id }}">
        </div>
     </div>
-    <div class = "form-group">
-        <label for = "nama" class = "col-sm-2 control-label">Nama</label>
-        <div class = "col-sm-10">
+    <div class = "form-group row">
+        <label for = "nama" class = "col-sm-1 control-label">Nama</label>
+        <div class = "col-sm-9">
            <input type="text" class="form-control" name="nama" required="required" value="{{ $p->pegawai_nama }}">
         </div>
      </div>
-    <div class = "form-group">
-        <label for = "jabatan" class = "col-sm-2 control-label">Jabatan</label>
-        <div class = "col-sm-10">
+    <div class = "form-group row">
+        <label for = "jabatan" class = "col-sm-1 control-label">Jabatan</label>
+        <div class = "col-sm-9">
            <input type="text" class="form-control" name="jabatan" required="required" value="{{ $p->pegawai_jabatan }}">
         </div>
      </div>
-     <div class = "form-group">
-        <label for = "umur" class = "col-sm-2 control-label">Umur</label>
-        <div class = "col-sm-10">
+     <div class = "form-group row">
+        <label for = "umur" class = "col-sm-1 control-label">Umur</label>
+        <div class = "col-sm-9">
            <input type = "number" class = "form-control" name="umur" required="required" value="{{ $p->pegawai_umur }}">
         </div>
      </div>
-     <div class = "form-group">
-        <label for = "jabatan" class = "col-sm-2 control-label">Alamat</label>
-        <div class = "col-sm-10">
+     <div class = "form-group row">
+        <label for = "jabatan" class = "col-sm-1 control-label">Alamat</label>
+        <div class = "col-sm-9">
            <textarea name="alamat" required="required" class = "form-control">{{ $p->pegawai_alamat }}</textarea>
         </div>
      </div>

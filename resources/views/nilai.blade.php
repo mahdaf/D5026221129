@@ -14,7 +14,7 @@
 
 	<table class="table table-stripped table-hover">
 		<tr>
-		<th>NRP</th>
+		    <th>NRP</th>
 			<th>Nilai Angka</th>
 			<th>SKS</th>
 			<th>Nilai Huruf</th>

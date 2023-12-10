@@ -10,8 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-    <div class="container">
+<header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">5026221129 - Muhammad Ahdaf Amali</a>
@@ -37,17 +36,18 @@
                 </div>
               </li>
             </ul>
-          </nav>
-
+        </nav>
+</header>
         <hr/>
 
-        <!-- bagian judul halaman blog -->
+    <div class="container">
+    <!-- bagian judul halaman blog -->
     <h2>@yield('judul_halaman') </h2>
 
-    @yield('isihalaman')
 
     <!-- bagian konten blog -->
     @yield('konten')
+
 
     <hr/>
 <footer>

@@ -78,3 +78,7 @@ Route::post('/kopi/update','App\Http\Controllers\KopiController@update');
 Route::get('/kopi/edit/{id}','App\Http\Controllers\KopiController@edit');
 Route::get('/kopi/hapus/{id}','App\Http\Controllers\KopiController@hapus');
 Route::get('/kopi/view/{id}','App\Http\Controllers\KopiController@view');
+
+//route CRUD Kategori
+Route::get('/kategori','App\Http\Controllers\KategoriController@index');
+Route::get('/hasil','App\Http\Controllers\KategoriController@hasil');
